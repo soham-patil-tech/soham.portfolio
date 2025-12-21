@@ -3,7 +3,7 @@
 A modern animated portfolio built using HTML, CSS, and JavaScript.
 
 ## Live Demo
-https://YOUR_USERNAME.github.io/portfolio/
+https://soham-patil-tech.github.io/soham.portfolio/
 
 ## Author
 Soham Patil
