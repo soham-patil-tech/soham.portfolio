@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Soham Patil | Animated Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+ <!-- Header -->
+ <header class="header reveal">
+    <div class="logo">Soham<span>.</span></div>
+
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+  <a href="resume/Soham_Patil_Resume.pdf" class="btn resume-btn" target="_blank">
+    View / Download CV
+</a>
+
+
+
+ </header>
+
+ <!-- Hero -->
+ <section id="home" class="hero reveal">
+    <div class="neon-wave-bg"></div>
+
+    <div class="hero-content">
+        <h1>
+            Hey There, I’m <span id="typing-name"></span>
+        </h1>
+        <p>Computer Applications Student • Aspiring Software Developer</p>
+        <a href="#projects" class="btn">View Projects</a>
+    </div>
+ </section>
+
+ <!-- About -->
+ <section id="about" class="section glass reveal">
+    <h2>About Me</h2>
+    <p class="center-text">
+        I am a BCA student at Pimpri Chinchwad College of Engineering and Research, affiliated with Savitribai Phule Pune University (SPPU), Pune, with a strong interest in software development and technology-driven problem solving.
+
+Skilled in C, HTML, CSS, JavaScript, and Data Structures, I enjoy building practical applications and exploring Artificial Intelligence to create efficient, real-world solutions. I am currently expanding my expertise in C++ and Python.
+
+With an entrepreneurial mindset and leadership-oriented approach, my goal is to transform innovative ideas into scalable tech solutions. I am open to opportunities for learning, collaboration, internships, and projects in software development, AI, and technology entrepreneurship.
+    </p>
+
+    <div class="about-grid">
+        <div class="about-card hover-glow reveal">
+            <h3>🎓 Education</h3>
+            <p>Bachelor of Computer Applications (BCA)</p>
+        </div>
+
+        <div class="about-card hover-glow reveal">
+            <h3>🎯 Goals</h3>
+            <ul>
+                <li>Become a skilled software developer</li>
+                <li>Build practical applications</li>
+                <li>Strengthen problem-solving skills</li>
+                <li>Start a tech-based venture</li>
+            </ul>
+        </div>
+    </div>
+ </section>
+
+ <!-- Skills -->
+ <section id="skills" class="section reveal">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+        <div class="skill-card hover-glow reveal">
+            <h3>💻 Technical Skills</h3>
+            <span>C Programming</span>
+            <span>Python Programming</span>
+            <span>C++ Programming</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Data Structures</span>
+            <span>Git & GitHub</span>
+        </div>
+
+        <div class="skill-card hover-glow reveal">
+            <h3>🤝 Soft Skills</h3>
+            <span>Problem Solving</span>
+            <span>Logical Thinking</span>
+            <span>Communication</span>
+            <span>Teamwork</span>
+            <span>Time Management</span>
+        </div>
+    </div>
+ </section>
+
+ <!-- Projects -->
+ <section id="projects" class="section glass reveal">
+    <h2>Projects</h2>
+
+    <div class="project-card hover-glow reveal">
+        <h3>Quiz Application (C)</h3>
+        <p>
+            Console-based quiz application built using C.
+            Supports MCQs, score calculation, and result display.
+        </p>
+        <a href="https://github.com/soham-patil-tech/quiz-app-c" target="_blank">
+            🔗 View on GitHub
+        </a>
+    </div>
+
+    <div class="project-card hover-glow reveal">
+        <h3>Personal Portfolio Website</h3>
+        <p>
+            My personal animated portfolio showcasing skills,
+            projects, and contact information.
+        </p>
+        <a href="https://github.com/soham-patil-tech/soham-patil-tech" target="_blank">
+            🔗 View on GitHub
+        </a>
+    </div>
+ </section>
+
+ <!-- Contact -->
+ <section id="contact" class="section glass reveal">
+    <h2>Contact</h2>
+
+    <div class="contact-box reveal">
+        <p>📧 <strong>Email:</strong> sohampatil983@gmail.com</p>
+
+        <p>🐙 <strong>GitHub:</strong>
+            <a href="https://github.com/soham-patil-tech" target="_blank">
+                soham-patil-tech
+            </a>
+        </p>
+
+        <p>🔗 <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/soham-patil-0562b0335" target="_blank">
+                Soham Patil
+            </a>
+        </p>
+
+        <p>📸 <strong>Instagram:</strong>
+            <a href="https://www.instagram.com/soham_patil_1507/" target="_blank">
+                @soham_patil_1507
+            </a>
+        </p>
+    </div>
+ </section>
+
+ <!-- Footer -->
+ <footer class="reveal">
+    <p>© 2025 Soham Patil • Built with Code & Creativity</p>
+ </footer>
+
+ <!-- Typing Effect -->
+ <script>
+    const text = "Soham Patil";
+    let index = 0;
+
+    function typeEffect() {
+        if (index < text.length) {
+            document.getElementById("typing-name").innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeEffect, 120);
+        }
+    }
+    window.onload = typeEffect;
+ </script>
+
+ <!-- Scroll Reveal Script -->
+ <script>
+    const reveals = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                }
+            });
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    reveals.forEach(el => observer.observe(el));
+ </script>
+
+</body>
+</html>
