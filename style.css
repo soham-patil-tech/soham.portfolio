@@ -310,3 +310,79 @@ footer {
     transform: translateY(0);
 }
 
+/* ---------------- PROJECTS SECTION ---------------- */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(14px);
+    padding: 28px;
+    border-radius: 18px;
+    transition: 0.4s ease;
+}
+
+/* Hover effect */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 35px rgba(56, 189, 248, 0.35);
+}
+
+/* Project Title */
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+/* Project Description */
+.project-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Highlight text (Tech & Learned) */
+.project-card strong {
+    color: var(--primary);
+}
+
+/* Project Links */
+.project-card a {
+    display: inline-block;
+    margin-top: 12px;
+    margin-right: 12px;
+    font-weight: 500;
+    color: var(--primary);
+    text-decoration: none;
+    position: relative;
+}
+
+/* Underline animation */
+.project-card a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: 0.3s;
+}
+
+.project-card a:hover::after {
+    width: 100%;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+    #projects {
+        grid-template-columns: 1fr;
+    }
+}
+
