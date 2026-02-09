@@ -34,7 +34,7 @@ The site is fully responsive, performance-optimized, and deployed using **GitHub
 - 📄 Resume view & download option
 - 📱 Fully responsive (mobile-friendly)
 - 🔗 Direct links to GitHub, LinkedIn, and Instagram
-- ⚡ Lightweight & fast loading
+
 
 ---
 
