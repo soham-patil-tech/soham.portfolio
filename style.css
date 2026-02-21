@@ -195,3 +195,22 @@ footer {
     transform: translateY(-4px) scale(1.03);
     box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
 }
+/* Contact Section Alignment */
+.contact-content {
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-content p {
+    margin: 12px 0;
+}
+
+/* Buttons aligned neatly */
+.contact-actions {
+    margin: 26px 0;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
