@@ -167,17 +167,31 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+/* Contact Buttons Layout */
+.contact-actions {
+    margin-top: 26px;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
 /* Mail Button */
 .mail-btn {
-    margin-top: 24px;
-    display: inline-block;
     background: linear-gradient(135deg, #38bdf8, #0ea5e9);
     color: #000;
     box-shadow: 0 0 22px rgba(56,189,248,0.6);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.mail-btn:hover {
+/* WhatsApp Button */
+.whatsapp-btn {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: #000;
+    box-shadow: 0 0 22px rgba(37, 211, 102, 0.6);
+}
+
+/* Hover Effect */
+.mail-btn:hover,
+.whatsapp-btn:hover {
     transform: translateY(-4px) scale(1.03);
-    box-shadow: 0 0 40px rgba(56,189,248,0.9);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
 }
