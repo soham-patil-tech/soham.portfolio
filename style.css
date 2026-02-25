@@ -310,3 +310,13 @@ footer {
         padding: 20px;
     }
 }
+
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 3.4rem;
+    }
+
+    .section {
+        padding: 120px 10%;
+    }
+}
