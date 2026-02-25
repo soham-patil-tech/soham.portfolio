@@ -24,3 +24,11 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.15 });
 
 reveals.forEach(el => observer.observe(el));
+
+// Mobile Menu Toggle
+const menuToggle = document.getElementById("menuToggle");
+const nav = document.querySelector(".nav");
+
+menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
