@@ -243,3 +243,41 @@ footer {
 @keyframes blink {
     50% { opacity: 0; }
 }
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--neon);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        right: 8%;
+        background: rgba(0,0,0,0.9);
+        backdrop-filter: blur(16px);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        display: none;
+        flex-direction: column;
+        padding: 20px;
+        gap: 14px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .header {
+        padding: 14px 6%;
+    }
+}
