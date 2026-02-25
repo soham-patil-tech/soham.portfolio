@@ -320,3 +320,14 @@ footer {
         padding: 120px 10%;
     }
 }
+
+@media (max-width: 768px) {
+    .contact-actions {
+        flex-direction: column;
+    }
+
+    .contact-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
