@@ -214,3 +214,22 @@ footer {
     gap: 18px;
     flex-wrap: wrap;
 }
+
+.nav a {
+    position: relative;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: var(--neon);
+    transition: width 0.3s;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
