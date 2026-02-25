@@ -83,6 +83,12 @@ body {
     opacity: 0.85;
 }
 
+/* Hero Button Alignment */
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 /* Sections */
 .section {
     padding: 110px 8%;
@@ -329,5 +335,12 @@ footer {
     .contact-actions .btn {
         width: 100%;
         justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-actions .btn {
+        min-width: 160px;
+        text-align: center;
     }
 }
