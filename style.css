@@ -233,3 +233,13 @@ footer {
 .nav a:hover::after {
     width: 100%;
 }
+
+#typing-name::after {
+    content: "|";
+    margin-left: 4px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
