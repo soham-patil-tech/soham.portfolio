@@ -15,6 +15,14 @@ It is designed to create a strong first impression through a clean layout, smoot
 The site is fully responsive, performance-optimized, and deployed using **GitHub Pages**.
 
 ---
+## 📸 Preview
+
+### Desktop View
+![Desktop Preview](assets/desktop-preview.png)
+
+### Mobile View
+![Mobile Preview](assets/mobile-preview.png)
+
 
 ## 🎯 Objectives
 
