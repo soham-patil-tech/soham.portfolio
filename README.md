@@ -54,7 +54,7 @@ The site is fully responsive, performance-optimized, and deployed using **GitHub
 |----------|--------|
 | HTML5 | Semantic structure |
 | CSS3 | Styling, animations, layout |
-| JavaScript | Interactivity & effects |
+| JavaScript 
 | GitHub Pages | Deployment & hosting |
 
 ---
