@@ -40,7 +40,6 @@ The site is fully responsive, performance-optimized, and deployed using **GitHub
 - 🎯 Scroll-based reveal animations
 - 🌊 Animated background effects
 - 📄 Resume view & download option
-- 📱 Fully responsive (mobile-friendly)
 - 🔗 Direct links to GitHub, LinkedIn, and Instagram
 - 💬 WhatsApp direct message button for instant contact
 - 📧 Email contact button for professional communication
